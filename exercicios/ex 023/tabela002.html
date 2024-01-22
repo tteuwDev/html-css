@@ -18,10 +18,29 @@
             padding: 10px;
         }
 
-        thead{
+        th{
             background-color: gray;
             color: white;
         }
+
+        caption{
+            text-transform: uppercase;
+            color: red;
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: black;
+        }
+
+        .total{
+            color: red;
+            background-color: black;
+        }
+
+        tbody > tr:nth-child(even) { 
+            background-color: lightgray;
+
+        }
+
     </style>
 </head>
 <body>
@@ -40,6 +59,7 @@
     -->
 
     <table>
+        <caption>População Brasileira </caption>
         <thead>
             <tr>
                 <th>Estado</th>
@@ -59,14 +79,26 @@
 
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>70 milhoes de flamenguistas$2</td>
+                <td>16 054 524</td>
+            <tr>
+                <td>Bahia</td>
+                <td>14 141 626</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td>11 444 380</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10 882 965</td>
              </tr>
         </tbody>
 
         <tfoot>
-            
-            <thead>Total de habitantes</thead>
-                <td>300 mihões de flamenguistas</td>
+            <th>Total de habitantes</th>
+                <td class="total">1 trilhão de flamenguistas</td>
         
         </tfoot>
 
